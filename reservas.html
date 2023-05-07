@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="./images.png" type="icon">
     <title>Pizza Days</title>
 </head>
+<body class="bodyr">
+    
+
 <header>
     <div class="contenedor">
         <img class="logo1" src="img/Logo (1) (1).png" alt="">
@@ -19,35 +22,34 @@
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="carta.html">Carta</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
             <li><a href="ubicacion.html">Ubicación</a></li>
         </ul>
     </nav>
 </header>
 
-
-
-<body class="bodyr">
-    <main>
+    <main >
         <h1 class="h1f">RESERVAS</h1>
         <form id="form" action="show-data.html">
-            <label for="nombre">Nombre y Apellido
+            <label for="nombre">Nombre y Apellido:
                 <input type="text" name="nombre" id="nombre"><br><br>
             </label>
-            <label for="fecha">Fecha
+            <label for="fecha">Fecha:
                 <input type="date" name="fecha" id="fecha"><br><br>
             </label>
-            <label for="hora">Hora
+            <label for="hora">Hora:
                 <input type="time" name="hora" id="hora"><br><br>
             </label>
-            <label for="telefono">Telefono
+            <label for="telefono">Telefono:
                 <input type="number" name="telefono" id="telefono"><br><br>
             </label>
             <input class="button" type="submit" value="Enviar">
+            <input class="button" type="reset" value="Borrar">
         </form>
     </main>
     <script src="./js/main.js"></script>
-</body>
-<footer>
+
+<footer class="footerr">
     <ul>
         <p>SEGUINOS EN NUESTRAS REDES!</p>
         <li> <a class="icon" href="https://api.whatsapp.com/send?phone=11111111" target="_blank">
@@ -58,5 +60,5 @@
         <img width="30" src="./img/instagram (1).png" alt="whatsapp"></a></li>
     </ul>
  </footer>
-
+</body>
 </html>
