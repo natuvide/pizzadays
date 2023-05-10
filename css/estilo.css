@@ -143,7 +143,7 @@ button:focus {
 }
 
 .producto {
-  width: 230px;
+  width: 150px;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 0 0 10px #aaa;
@@ -177,16 +177,6 @@ button:focus {
   color: rgb(148, 142, 142);
 }
 
-.producto a {
-  color: rgb(202, 182, 139);
-  font-size: 18px;
-  text-decoration: none;
-  background-color: rgb(133, 89, 60);
-  padding: 8px;
-  margin: 5px;
-  border-radius: 10px;
-  display: inline-block;
-}
 .contenedor2 {
   display:flex;
   flex-direction: row; 
