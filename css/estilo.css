@@ -205,7 +205,7 @@ p{
     position:absolute;
     z-index: 2;
     top: 80%;
-    left: 0%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px;
 }
@@ -264,6 +264,19 @@ color: #fcfcfc;
   width: 90%;
   padding: auto;
   border-radius: 20%;
+
+}
+
+#nosotros {
+  font-size: 30px;
+ 
+  color: white;
+  position:absolute;
+  z-index: 2;
+  top: 80%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  padding: 10px
 
 }
 
