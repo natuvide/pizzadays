@@ -2,7 +2,7 @@ let nav_bar = `   <nav>
 
 <div class="contenedor">
 
-<a href="./index.html">
+<a href="./1-index.html">
 <img class="logo1" src="./img/logopizzadays.png" alt=""> 
 </a>   
 </div>
@@ -10,9 +10,9 @@ let nav_bar = `   <nav>
 
 <ul>
 
-    <li><a href="carta.html">Carta</a></li>
-    <li><a href="reservas.html">Reservas</a></li>
-    <li><a href="ubicacion.html">Ubicación</a></li>
+    <li><a href="2-carta.html">Carta</a></li>
+    <li><a href="3-reservas.html">Reservas</a></li>
+    <li><a href="4-ubicacion.html">Ubicación</a></li>
 </ul>
 
 </nav>
