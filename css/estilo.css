@@ -171,9 +171,11 @@ button:focus {
   font-weight: 100;
 }
 
-.pprecio {
+.precio {
   font-weight: bold;
+  color: #fdfcfc;
   margin-top: 5px;
+  text-align: center;
 }
 
 .ptexto {
@@ -190,29 +192,6 @@ button:focus {
   background-color: #141313;
 }
 
-.h1_index {
-  font-size: 40px;
-  color: white;
-  text-shadow: 0 0 5px rgb(7, 7, 7);
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px
-}
-
-.p_index {
-  font-size: 35px;
-  color: white;
-  text-shadow: 0 0 5px rgb(7, 7, 7);
-  position: absolute;
-  z-index: 2;
-  top: 60%;
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  padding: 35px;
-}
 .p_carta{
 font-size: 35px;
 color: white;
@@ -230,7 +209,6 @@ padding: 10px;
   flex-direction: column;
   /* align-items: center; */
 }
-
 
 footer {
   position: relative;
@@ -260,7 +238,7 @@ footer ul {
   color: #f57f11;
   position: absolute;
   top: 67%;
-
+  padding: 10px;
 }
 
 .icon {
@@ -274,7 +252,6 @@ footer ul {
 }
 
 .mapa {
-
   display: flex;
   width: 75%;
   background-color: #312e2e;
