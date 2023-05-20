@@ -2,7 +2,7 @@ let nav_bar = `   <nav>
 
 <div class="contenedor">
 
-<a href="./1-index.html">
+<a href="index.html">
 <img class="logo1" src="./img/logopizzadays.png" alt=""> 
 </a>   
 </div>
