@@ -160,7 +160,6 @@ button:focus {
 
 .textocard {
   padding: 10px;
-
 }
 
 #pizza {
@@ -172,13 +171,19 @@ button:focus {
 }
 
 .precio {
-  font-weight: bold;
+  background-color: #333;
+  border-radius: 10px;
+  font-size: 20px;
   color: #fdfcfc;
   margin-top: 5px;
+  align-items:self-end;
   text-align: center;
 }
 
 .ptexto {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
   color: rgb(148, 142, 142);
 }
 
@@ -192,17 +197,7 @@ button:focus {
   background-color: #141313;
 }
 
-.p_carta{
-font-size: 35px;
-color: white;
-text-shadow: 0 0 5px rgb(7, 7, 7);
-position: absolute;
-z-index: 2;
-top: 80%;
-/* left: 50%; */
-/* transform: translate(-50%, -50%); */
-padding: 10px;
-}
+
 
 .main_img_animacion {
   display: flex;
