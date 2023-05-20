@@ -10,9 +10,9 @@ let nav_bar = `   <nav>
 
 <ul>
 
-    <li><a href="2-carta.html">Carta</a></li>
-    <li><a href="3-reservas.html">Reservas</a></li>
-    <li><a href="4-ubicacion.html">Ubicación</a></li>
+    <li><a href="1-carta.html">Carta</a></li>
+    <li><a href="2-reservas.html">Reservas</a></li>
+    <li><a href="3-ubicacion.html">Ubicación</a></li>
 </ul>
 
 </nav>
