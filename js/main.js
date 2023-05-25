@@ -10,7 +10,7 @@ let nav_bar = `   <nav>
 
 <ul>
 
-    <li><a href="1-carta.html">Carta</a></li>
+    <li><a href="pizzasdatos.html">Carta</a></li>
     <li><a href="2-reservas.html">Reservas</a></li>
     <li><a href="3-ubicacion.html">Ubicación</a></li>
 </ul>

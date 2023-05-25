@@ -146,10 +146,13 @@ button:focus {
 }
 
 .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 150px;
   border: 1px solid black;
   border-radius: 10px;
-  box-shadow: 0 0 10px #aaa;
+  box-shadow: 2px 4px 20px 0px #aaa;
   margin: 25px;
 }
 
@@ -158,7 +161,14 @@ button:focus {
   border-radius: 10px;
 }
 
+.centrar_nombre{
+  text-align: center;
+
+}
 .textocard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px;
 }
 
@@ -170,14 +180,17 @@ button:focus {
   font-weight: 100;
 }
 
+.fotocarta{
+
+}
 .precio {
   background-color: #333;
   border-radius: 10px;
   font-size: 20px;
   color: #fdfcfc;
-  margin-top: 5px;
-  align-items:self-end;
   text-align: center;
+  margin: 7px;
+  
 }
 
 .ptexto {
@@ -185,10 +198,12 @@ button:focus {
   text-transform: uppercase;
   font-size: 10px;
   color: rgb(148, 142, 142);
+  margin: 7px;
 }
 
 .contenedor2 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }

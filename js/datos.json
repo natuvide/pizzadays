@@ -1,0 +1,73 @@
+{
+    "lista_pizzas": [
+        {
+            "id": 1,
+            "foto": "./imgpizzas/muzzarellapx.jpg",
+            "nombre": "PIZZA MUZARELLA",
+            "descripcion": "MUZARELLA, SALSA DE TOMATE, ACEITUNAS Y ORÉGANO",
+            "precio": 2450
+
+        },
+
+        {
+            "id": 2,
+            "foto": "./imgpizzas/pollopx.jpg",
+            "nombre": "PIZZA DE POLLO",
+            "descripcion": "muzzarella, pollo desmenuzado con salsa de crema y tomate",
+            "precio": 2900
+        },
+
+        {
+            "id": 3,
+            "foto": "./imgpizzas/ananapx.jpg",
+            "nombre": "PIZZA DE ANANÁ",
+            "descripcion": "muzzarella, fetas de ananá, jamon cocido y cereza",
+            "precio": 2850
+        
+        },
+        {
+            "id": 4,
+            "foto": "./imgpizzas/calabresapx.jpg" ,
+            "nombre": "Pizza Calabresa",
+            "descripcion": "muzzarella, salame y tomate",
+            "precio": 2750
+        },
+
+        {
+            "id": 5,
+            "foto": "./imgpizzas/candelariapx.jpg",
+            "nombre": "Pizza Candelaria",
+            "descripcion": "Muzzarella, acelga, panceta y queso parmesano",
+            "precio": 2750
+
+        },
+
+        {
+            "id": 6,
+            "foto": "./imgpizzas/americanapx.jpg",
+            "nombre": "Pizza Americana",
+            "descripcion": "Muzzarella, huevo frito, papas fritas y panceta ahumada",
+            "precio": 2900
+        },
+
+        {
+            "id": 7,
+            "foto": "./imgpizzas/pepperonipx.jpg",
+            "nombre": "Pizza Pepperoni",
+            "descripcion": "muzzarella, salsa de tomate y chorizo criollo",
+            "precio": 2750
+        
+        },
+        {
+            "id": 8,
+            "foto": "./imgpizzas/ruculapx.jpg",
+            "nombre": "PIZZA rucula",
+            "descripcion": "muzzarella, pollo desmenuzado con salsa de crema y tomate",
+            "precio": 2850
+        }
+
+
+
+        
+    ]
+}
