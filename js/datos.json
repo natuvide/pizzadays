@@ -28,7 +28,7 @@
         {
             "id": 4,
             "foto": "./imgpizzas/calabresapx.jpg" ,
-            "nombre": "Pizza Calabresa",
+            "nombre": "PIZZA CALABRESA",
             "descripcion": "muzzarella, salame y tomate",
             "precio": 2750
         },
@@ -36,7 +36,7 @@
         {
             "id": 5,
             "foto": "./imgpizzas/candelariapx.jpg",
-            "nombre": "Pizza Candelaria",
+            "nombre": "PIZZA CANDELARIA",
             "descripcion": "Muzzarella, acelga, panceta y queso parmesano",
             "precio": 2750
 
@@ -45,7 +45,7 @@
         {
             "id": 6,
             "foto": "./imgpizzas/americanapx.jpg",
-            "nombre": "Pizza Americana",
+            "nombre": "PIZZA AMERICANA",
             "descripcion": "Muzzarella, huevo frito, papas fritas y panceta ahumada",
             "precio": 2900
         },
@@ -53,7 +53,7 @@
         {
             "id": 7,
             "foto": "./imgpizzas/pepperonipx.jpg",
-            "nombre": "Pizza Pepperoni",
+            "nombre": "PIZZA PEPPERONI",
             "descripcion": "muzzarella, salsa de tomate y chorizo criollo",
             "precio": 2750
         
@@ -61,7 +61,7 @@
         {
             "id": 8,
             "foto": "./imgpizzas/ruculapx.jpg",
-            "nombre": "PIZZA rucula",
+            "nombre": "PIZZA RUCULA",
             "descripcion": "muzzarella, pollo desmenuzado con salsa de crema y tomate",
             "precio": 2850
         }

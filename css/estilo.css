@@ -145,32 +145,14 @@ button:focus {
   font-weight: 100;
 }
 
-.producto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 150px;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 2px 4px 20px 0px #aaa;
-  margin: 25px;
-}
+
 
 .producto img {
   width: 100%;
   border-radius: 10px;
 }
 
-.centrar_nombre{
-  text-align: center;
 
-}
-.textocard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-}
 
 #pizza {
   text-align: center;
@@ -180,37 +162,8 @@ button:focus {
   font-weight: 100;
 }
 
-.fotocarta{
 
-}
-.precio {
-  background-color: #333;
-  border-radius: 10px;
-  font-size: 20px;
-  color: #fdfcfc;
-  text-align: center;
-  margin: 7px;
-  
-}
 
-.ptexto {
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-size: 10px;
-  color: rgb(148, 142, 142);
-  margin: 7px;
-}
-
-.contenedor2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.fondocarta {
-  background-color: #141313;
-}
 
 
 .p_index {
