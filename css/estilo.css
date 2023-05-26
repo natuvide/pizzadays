@@ -162,12 +162,19 @@ button:focus {
   font-weight: 100;
 }
 
-
-
-
+@font-face {
+  font-family: 'DK';
+  src: local('DK'),
+    url('../fonts/DK\ Midnight\ Chalker.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+.dk{
+  font-family: 'DK';
+}
 
 .p_index {
-  font-family: 'Handlee', cursive;
+  font-family: 'DK';
   font-size: 35px;
   color: white;
   text-shadow: 0 0 5px rgb(7, 7, 7);
@@ -177,7 +184,6 @@ button:focus {
   left: 11%;
   padding: 35px;
 }
-
 
 .main_img_animacion {
   display: flex;
