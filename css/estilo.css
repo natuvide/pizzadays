@@ -61,7 +61,7 @@ a:hover {
 #form {
   width: 400px;
   background-color: rgb(245, 243, 240);
-  margin: 100px auto;
+  margin: 12px auto;
   padding: 20px;
   margin-top: 0px;
   box-sizing: border-box;
@@ -171,6 +171,7 @@ footer ul {
   display: block;
   padding: 0 10px;
   color: #fcfcfc;
+ 
 }
 
 .icon_margin {
@@ -180,6 +181,7 @@ footer ul {
 .mapa {
   display: flex;
   width: 75%;
+  height: 75%;
   background-color: #312e2e;
   padding: 30px;
   border-radius: 5%;
