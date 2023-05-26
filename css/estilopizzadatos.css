@@ -19,9 +19,6 @@
     justify-content: space-around;
   
   }
-  .fotocarta{
-
-  }
   .precio {
     background-color: #333;
     border-radius: 10px;
@@ -62,3 +59,47 @@
     margin: 25px;
 
   } 
+
+  @media only screen and (max-width: 600px)
+  { 
+
+  
+    .producto {
+
+    width: 100%;
+    }
+    .centrar_nombre{
+    font-size: 6vw;
+      }
+    .ptexto{
+    font-size: 3vw;
+        }
+    .precio{
+    font-size: 5vw;
+    background-color: rgb(211, 135, 100);
+          } 
+   }
+
+  @media only screen and (min-width: 600px) and (max-width: 768px){
+
+    .contenedor2 {
+      width: 85vw;
+    }
+    .producto{
+      width: 31vw;
+      }
+    .centrar_nombre{
+    font-size: 4.5vw;
+      }
+    .ptexto{
+    font-size: 2vw;
+        }
+    .precio{
+    font-size: 4vw;
+    background-color: rgb(136, 150, 75);
+          }
+         
+  }
+
+  @media only screen and (min-width: 768px){}
+   
