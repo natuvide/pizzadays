@@ -5,13 +5,6 @@
   box-sizing: content-box;
 }
 
-.main__image {
-  max-width: 100vw;
-}
-
-.main__image img {
-  width: 100%;
-}
 
 
 header nav {
@@ -162,6 +155,20 @@ button:focus {
   font-weight: 100;
 }
 
+.main_contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.imagen_pizza {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 100vw; */
+}
+
+.imagen_pizza img {
+  width: 100%;
+}
+
 @font-face {
   font-family: 'DK';
   src: local('DK'),
@@ -180,15 +187,11 @@ button:focus {
   text-shadow: 0 0 5px rgb(7, 7, 7);
   position: absolute;
   z-index: 2;
-  top: 55%;
-  left: 11%;
-  padding: 35px;
+  top: 65%;
+  right: 0%;
+  padding-right: 5%;
 }
 
-.main_img_animacion {
-  display: flex;
-  flex-direction: column;
-}
 
 footer {
   position: relative;
