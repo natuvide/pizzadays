@@ -23,15 +23,18 @@
 
     <main >
         <h1 class="h1reservas">RESERVAS</h1>
-        <form id="form" action="4-show-data.html">
+        <form name="f_reserva" id="form" action="4-show-data.html" onsubmit="return validateForm()">
             <label for="nombre">Nombre y Apellido:
                 <input type="text" name="nombre" id="nombre"><br><br>
             </label>
+            <label for="email">e-mail:
+                <input type="email" name="email" id="email"><br><br>
+            </label>
             <label for="fecha">Fecha:
-                <input type="date" name="fecha" id="fecha"><br><br>
+                <input required type="date" name="fecha" id="fecha"><br><br>
             </label>
             <label for="hora">Hora:
-                <input type="time" name="hora" id="hora"><br><br>
+                <input required type="time" name="hora" id="hora"><br><br>
             </label>
             <label for="telefono">Telefono:
                 <input type="number" name="telefono" id="telefono"><br><br>
@@ -47,5 +50,7 @@
     </footer>
     
     <script src="./js/main.js"></script>
+    <script src="./js/validaciones.js"></script>
+
     </body>
 </html>
