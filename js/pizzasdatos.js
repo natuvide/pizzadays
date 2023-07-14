@@ -1,58 +1,35 @@
 const { createApp } = Vue
 
-createApp({
-    data() {
-      return {
-       url:"./js/datos.json",
-    
-        pizzas: [],
-      
-      }
-    },
-    methods:{
-        fetchData(origen){
-            fetch(origen)
-            .then( response => response.json())
-            .then( traerPizzas => {
-                console.log(traerPizzas.lista_pizzas),
-                this.pizzas=traerPizzas.lista_pizzas
-            })
- 
-        },
-
-    },
-    created() {
-      
-        this.fetchData(this.url)
-
-    },
-  }).mount('#app')
-
-    //-------------------------------------------
-  
     createApp({
     data() {
       return {
-        url:"https://pizza-api.mirkingo.duckdns.org/",
+        url:"https://pizzadays.natuvide.duckdns.org/pizzas",
         pizzas: [],
         
       }
     },
     methods:{
         fetchData(origen){
+          console.log("Inicia el fetch")
+          console.log(origen)
             fetch(origen)
-            .then( response => response.json())
-            .then( traerPizzas => {
-                console.log(traerPizzas.pizzas),
-                this.pizzas=traerPizzas.pizzas
+            .then( response => {
+              console.log("REsponse done")
+              return response.json();
             })
+            .then( traerPizzas => {
+              console.log("Inicia traerPizzas")
+              this.pizzas=traerPizzas;
+              console.log(this.pizzas);
+              console.log("Finaliza traerPizzas")
+
+            })
+            console.log("Finaliza el fetch");
  
-        },
+        }
 
     },
     created() {
-        console.log(this.pizzas)
         this.fetchData(this.url)
-
     },
-  }).mount('#app2')
+  }).mount('#app')

@@ -21,37 +21,21 @@
     </header>
 
     <main  style="color: aliceblue;" class="fondocarta">
-        <!-- <h1>CON ARCHIVO JSON</h1> -->
         <div id="app" class="contenedor2">
 
             <div  v-for="pizza in pizzas" class="producto">
                
                 <div>
-                    <img  class="fotocarta" :src=pizza.foto alt="producto">
+                    <img  class="fotocarta" :src="'./imgpizzas/'+pizza.imagen" :alt="'foto '+pizza.nombre">
                     <div class="textocard">
                         <h2 class="centrar_nombre">{{pizza.nombre}}</h2>
-                        <p class="ptexto">{{pizza.descripcion}}</p>
+                        <p class="ptexto">{{pizza.ingredientes}}</p>
                     </div>
                 </div>               
                     
                 <p class="precio"> $ {{pizza.precio}}</p>
-         
             </div>
-
-        <!-- </div>
-        <h1>CON API MIRKINGO</h1>
-        <div id="app2" class="contenedor2" style="color: aliceblue;">
-
-            <div  v-for="pizza in pizzas" class="producto">
-                <img :src=pizza.foto alt="producto">
-                <div class="textocard">
-                    <h2 id={{pizza.id}}>{{pizza.nombre}}</h2>
-                      <p class="ptexto">{{pizza.descripcion}}</p>
-                        <p class="precio">{{pizza.precio}}</p>
-                </div>
-            </div>
-
-        </div> -->
+        </div>
     </main>
 
     <footer class="icon" id="footer">
