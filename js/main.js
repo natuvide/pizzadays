@@ -7,12 +7,11 @@ let nav_bar = `   <nav>
 </a>   
 </div>
 
-
 <ul>
-
     <li class="opcion_menu"><a href="pizzasdatos.html">Carta</a></li>
     <li class="opcion_menu"><a href="2-reservas.html">Reservas</a></li>
     <li class="opcion_menu"><a href="3-ubicacion.html">Ubicación</a></li>
+    <li class="opcion_menu"><a href="list_pizza.html">Admin</a></li>
 </ul>
 
 </nav>

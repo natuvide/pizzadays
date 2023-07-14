@@ -1,0 +1,83 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Bebas Neue", cursive;
+}
+
+a.btn.btn-primary{
+  margin: 10px;
+}
+
+a:hover {
+  color: #f57f11;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform:  scale(1.1);
+}
+button:hover {
+  color: #f57f11;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform:  scale(1.1);
+}
+
+
+.logo1 {
+  width: 90px;
+  transition: transform 1.2s;
+}
+.rotar:hover{
+
+  transform: rotate(360deg) scale(1.2);
+
+}
+
+
+
+
+
+
+
+.icon_margin {
+  margin: 10px;
+}
+
+.mapa {
+  display: flex;
+  width: 75%;
+  background-color: #312e2e;
+  padding: 30px;
+  border-radius: 5%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 5px 5px 5px;
+
+}
+
+.mainm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.bodymapa {
+  background-color: #3b3a3a;
+
+}
+
+.aubicacion {
+  background-color: rgb(15, 170, 93);
+  font-size: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.map {
+  width: 100%;
+  padding: auto;
+  border-radius: 5%;
+}
