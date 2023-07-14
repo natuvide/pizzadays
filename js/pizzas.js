@@ -3,7 +3,7 @@ const { createApp } = Vue
     data() {
       return {
         pizzas:[],
-        url:'https://pizzadays.natuvide.duckdns.org/pizzas',   
+        url:'https://natuvide.pythonanywhere.com/pizzas',   
         error:false,
         cargando:true,
         /*atributos para el guardado  de los valores del formulario */

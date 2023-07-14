@@ -10,7 +10,7 @@ const { createApp } = Vue
         imagen:"",
         ingredientes:0,
         precio:0,
-        url:'https://pizzadays.natuvide.duckdns.org/pizzas/'+id,
+        url:'https://natuvide.pythonanywhere.com/pizzas/'+id,
        }  
     },
     methods: {

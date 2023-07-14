@@ -3,7 +3,7 @@ const { createApp } = Vue
     createApp({
     data() {
       return {
-        url:"https://pizzadays.natuvide.duckdns.org/pizzas",
+        url:"https://natuvide.pythonanywhere.com/pizzas",
         pizzas: [],
         
       }
