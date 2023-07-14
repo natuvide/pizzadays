@@ -7,7 +7,8 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/estiloformulariocrud.css">
 </head>
 <body>
   <header id="header_crud">
@@ -15,44 +16,71 @@
   </header>
   <main>
     <div class="container" id="app">
-      <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-      <h2>Editar pizza </h2>
-      <br>
-      <h5>Valores actuales</h5>
-      <hr>
-      <div class="mb-3">
-        <label for="id">Id:</label>
-        <input type="number" name="id" id="id" class="no-outline" disabled v-model="id" >
-      </div>
-      <div class="mb-3">
-        <label for="precio">Precio:</label>
-        <input type="number" name="precio" id="precio" class="no-outline" disabled v-model="precio" >
-      </div>
-      <div class="mb-3">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" class="no-outline" disabled v-model="nombre" >
-      </div>
+      <h1>Editar pizza </h2>
+      <form>
+        <section class="sub_forms">
+          <div class="sub_form_antes">
+            <h5>Valores actuales</h5>
+            <hr>
+            <div >
+              <label for="id_antes">Id:</label>
+              <input type="number" name="id_antes" id="id_antes" class="no-outline" disabled v-model="id" >
+            </div>
+            <div >
+              <label for="nombre_antes">Nombre:</label>
+              <input type="text" name="nombre_antes" id="nombre_antes" class="no-outline" disabled v-model="nombre" >
+            </div>
+            <div >
+              <label for="precio_antes">Precio:</label>
+              <input type="number" name="precio_antes" id="precio_antes" class="no-outline" disabled v-model="precio" >
+            </div>
+            <div class="">
+              <label for="ingredientes_antes">Ingredientes:</label>
+              <textarea name="ingredientes_antes" id="ingredientes_antes" rows="5"
+                        class="no-outline" disabled v-model="ingredientes">
+              </textarea>
+
+            </div>
+            <div >
+              <label for="imagen_antes">Imagen:</label>
+              <input type="text" name="imagen_antes" id="imagen_antes" class="no-outline" disabled v-model="imagen" >
+            </div>
+            
+          </div>
+          
+          <div class="sub_form_despues">
+            <h5>Valores nuevos</h2>
+              <hr>
+              <div >
+                <label for="id_despues">Id:</label>
+                <input type="number" name="id_despues" id="id_despues" class="no-outline" disabled v-model="id" >
+              </div>
+              <div >
+                <label for="nombre_despues">Nombre:</label>
+                <input type="text" name="nombre_despues" id="nombre_despues" v-model="nombre">
+              </div>
+              <div >
+                <label for="precio_despues">Precio:</label>
+                <input type="number" name="precio_despues" id="precio_despues" v-model="precio">
+              </div>
+              <div class="">
+                <label for="ingredientes_despues">Ingredientes:</label>
+                <textarea name="ingredientes_despues" id="ingredientes_despues" rows="5"
+                class="no-outline" v-model="ingredientes">
+                </textarea>     
+              </div>
+              <div >
+                <label for="imagen">Imagen:</label>
+                <input type="text" name="imagen" id="imagen_despues" v-model="imagen">  
+                <img width="100"   :src="imagen" alt="">
+              </div>
+          </div>
+        </section>
       
-      <h5>Valores nuevos</h2>
-      <hr>
-      <div class="mb-3">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" v-model="nombre">
-      </div>
-      <div class="mb-3">
-        <label for="precio">Precio</label>
-        <input type="number" name="precio" id="precio" v-model="precio">
-      </div>
-      <div class="mb-3">
-        <label for="stock">Ingredientes</label>
-        <input type="text" name="ingredientes" id="ingredientes" v-model="ingredientes">
-      </div>
-      <div class="mb-3">
-        <label for="imagen">Imagen</label>
-        <input type="text" name="imagen" id="imagen" v-model="imagen">  
-        <img width="100"   :src="imagen" alt="">
-      </div>
-      <button type="button" class="btn btn-success" v-on:click="modificar()">Modificar</button>
+      <button type="button" class="btn btn-success" v-on:click="modificar()">
+        Modificar
+        <i class="bi bi-check2-circle"></i>
+      </button>
       </form>
     </div>
   </main>

@@ -5,25 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/estilocrud.css">
 
 </head>
 <body>
     <header id="header_crud">
         <!-- place navbar here -->
-        <!-- <div class="contenedor">
-
-            <a href="index.html">
-            <img class="logo1 rotar" src="./img/logopizzadays.png" alt="logo_pizzadays"> 
-            </a>   
-        </div> -->
     </header>
     <main>
         <div id="app">
             <h1>Listado de pizzas</h1>
-            <br>
-            <a  class="btn btn-primary" href="create_pizza.html">Nuevo</a>
-            <br><br>
+            <div class="botonera">
+                <a  id="new_item" class="btn btn-success" href="create_pizza.html">
+                    <i class="bi bi-plus-circle"></i>
+                    Nuevo
+                </a>
+            </div>
+           
             <div v-if="error">
                 <p>Lo sentimos , ........</p>
             </div>
@@ -34,7 +33,7 @@
                 </section>
                 <section v-else>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
+                        <table class="table ">
                             <thead>
                                 <tr>
                                     <th scope="col">Id</th>
@@ -46,17 +45,29 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="" v-for="pizza in pizzas">
-                                    <td scope="row">{{pizza.id}}</td>
+                                <tr v-for="pizza in pizzas">
+                                    <td  scope="row">{{pizza.id}}</td>
                                     <td>{{pizza.nombre}}</td>
-                                    <td>{{pizza.precio}}</td>
+                                    <td>${{pizza.precio}}</td>
                                     <td>{{pizza.ingredientes}}</td>
                                     <td>
                                         <img width="60"  :src="'https://natuvide.pythonanywhere.com/imagenes_pizzas/'+pizza.imagen" :alt="pizza.nombre">
                                     </td>
-                                    <td>
-                    			        <a class="btn btn-primary" :href="'update_pizza.html?id='+ pizza.id" >Editar</a>
-                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(pizza.id)">Eliminar</button>
+                                    <td class="center_content ">
+                                        <br>
+                    			        <div class="align_acciones">
+                                            <a class="btn btn-warning boton_editar" :href="'update_pizza.html?id='+ pizza.id" >
+                                                <i class="bi bi-pencil"></i>
+                                                Editar
+                                                
+                                            </a>
+                                            <button type="button " class="btn btn-danger" v-on:click="eliminar(pizza.id)">
+                                                <i class="bi bi-trash3"></i>
+                                                Eliminar
+                                                
+                                            </button>
+                                        </div>
+                                        <br>
                                     </td>
                                 </tr>
                             </tbody>

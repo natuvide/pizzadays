@@ -9,13 +9,41 @@ a.btn{
   margin: 15px;
 }
 
+.btn{
+  width: 25vw;
+}
+
 .center_content {
   display: block;
   margin: auto;
     
 }
+form{
+  background-color: #3b3a3a;
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
 
-#app, nav{
+}
+
+div{
+  width: 50%;
+}
+textarea{
+  width: auto;  
+}
+
+nav{
+  background-color: #3b3a3a;
+  color: rgb(201, 197, 197);
+}
+
+#app, html, main, body{
   background-color: #3b3a3a;
   color: rgb(201, 197, 197);
 }
@@ -26,6 +54,19 @@ a.btn{
 
 }
 
+.sub_forms{
+  display: flex;
+
+}
+
+.sub_form_antes{
+  margin: 30px;
+
+}
+.sub_form_despues{
+  margin: 30px;
+
+}
 i{
   margin: 2px;
 }
