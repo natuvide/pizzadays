@@ -18,7 +18,6 @@ const { createApp } = Vue
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data)
                     this.id=data.id
                     this.nombre = data.nombre;
                     this.imagen=data.imagen
@@ -31,12 +30,20 @@ const { createApp } = Vue
                 })
         },
         modificar() {
+            console.log('"""""""""""""""""""""""');
+            console.log(this.imagen);
             let pizza = {
+                
                 nombre:this.nombre,
                 precio: this.precio,
                 ingredientes: this.ingredientes,
-                imagen: this.imagen
+                imagen: this.imagen,
+
             }
+            console.log(this.imagen);
+            console.log('"""""""""""""""""""""""');
+
+
             var options = {
                 body: JSON.stringify(pizza),
                 method: 'PUT',

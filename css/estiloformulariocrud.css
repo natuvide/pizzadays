@@ -10,9 +10,13 @@ a.btn{
 }
 
 .btn{
-  width: 25vw;
-}
+  width: 25;
+  margin: 10px;
 
+}
+input, textarea{
+  margin: 10px;
+}
 .center_content {
   display: block;
   margin: auto;
@@ -30,6 +34,8 @@ form{
   width: 50vw;
 
 }
+
+
 
 div{
   width: 50%;
