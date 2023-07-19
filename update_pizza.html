@@ -19,35 +19,37 @@
       <h1>Editar pizza </h2>
       <form>
         <section class="sub_forms">
-          <!-- <div class="sub_form">
+          <div class="sub_form">
             <h5>Valores actuales</h5>
             <hr>
             <div >
-              <label for="id">Id:</label>
-              <input type="number" name="id" id="id_antes" class="no-outline" disabled :value="id" >
+              <label for="id_antes">Id:</label>
+              <input type="number" name="id" id="id_antes" class="no-outline" disabled :value="id_antes" >
             </div>
             <div >
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" id="nombre_antes" class="no-outline" disabled :value="nombre" >
+              <label for="nombre_antes">Nombre:</label>
+              <input type="text" name="nombre_antes" id="nombre_antes" class="no-outline" disabled :value="nombre_antes" >
             </div>
             <div >
-              <label for="precio">Precio:</label>
-              <input :value="precio" type="number" name="precio" id="precio_antes" class="no-outline" disabled  >
+              <label for="precio_antes">Precio:</label>
+              <input  type="number" name="precio_antes" id="precio_antes" class="no-outline" disabled :value="precio_antes" >
             </div>
             <div class="">
-              <label for="ingredientes">Ingredientes:</label>
-              <textarea name="ingredientes" id="ingredientes_antes" rows="5"
-                        class="no-outline" disabled :value="ingredientes">
+              <label for="ingredientes_antes">Ingredientes:</label>
+              <textarea name="ingredientes_antes" id="ingredientes_antes" rows="5"
+                        class="no-outline" disabled :value="ingredientes_antes">
               </textarea>
 
             </div>
             <div >
-              <label for="imagen">Imagen:</label>
-              <input type="text" name="imagen" id="imagen" class="no-outline" disabled v-model="imagen" >
+              <label for="imagen_antes">Imagen:</label>
+              <input type="text" name="imagen_antes" id="imagen_antes" class="no-outline" disabled v-model="imagen_antes" >
+              <img width="100"   :src="'https://natuvide.pythonanywhere.com/imagenes_pizzas/'+imagen_antes" :alt="imagen_antes">
+
             </div>
             
           </div>
-           -->
+          
           <div class="sub_form">
             <h5>Valores nuevos</h2>
               <hr>

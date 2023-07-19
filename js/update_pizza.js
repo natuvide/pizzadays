@@ -10,9 +10,15 @@ const { createApp } = Vue
         imagen:"",
         ingredientes:0,
         precio:0,
+        id_antes:0,
+        nombre_antes:"",
+        precio_antes:"",
+        ingredientes_antes:"",
+        imagen_antes:"",
         url:'https://natuvide.pythonanywhere.com/pizzas/'+id,
        }  
     },
+    
     methods: {
         fetchData(url) {
             fetch(url)
@@ -22,7 +28,13 @@ const { createApp } = Vue
                     this.nombre = data.nombre;
                     this.imagen=data.imagen
                     this.ingredientes=data.ingredientes
-                    this.precio=data.precio                    
+                    this.precio=data.precio  
+                    
+                    this.id_antes=data.id
+                    this.nombre_antes = data.nombre;
+                    this.imagen_antes=data.imagen
+                    this.ingredientes_antes=data.ingredientes
+                    this.precio_antes=data.precio                    
                 })
                 .catch(err => {
                     console.error(err);
